@@ -1,17 +1,14 @@
-function stack(fn) {
-  var e = new Error;
-  Error.captureStackTrace(e, fn);
-  return e.stack;
-}
+module.exports = trace;
+module.exports.log = log;
 
-module.exports = function trace (err) {
+function trace (err) {
   if (err && err.app_stack === undefined) {
     err.app_stack = stack(arguments.callee);
   }
   return err;
 };
 
-trace.log = function log (err, req, res) {
+function log (err, req, res) {
   if (err === null || err === undefined) return;
 
   var app_stack = err && err.app_stack || stack(arguments.callee);
@@ -23,3 +20,10 @@ trace.log = function log (err, req, res) {
   info += app_stack;
   console.error(info);
 };
+
+function stack(fn) {
+  var e = new Error;
+  Error.captureStackTrace(e, fn);
+  return e.stack;
+}
+
