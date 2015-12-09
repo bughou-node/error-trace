@@ -1,0 +1,20 @@
+{
+  "name": "error-trace",
+  "version": "0.0.1",
+  "description": "trace error trace",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "homepage": "https://github.com/bughou/error-trace",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/bughou/error-trace.git"
+  },
+  "keywords": [
+    "error",
+    "trace"
+  ],
+  "author": "bughou@gmail.com",
+  "license": "ISC"
+}
