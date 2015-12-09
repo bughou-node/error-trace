@@ -16,8 +16,8 @@ function log (err, req, res) {
   if (req) {
     info += req.method + ' ' + req.url + ' ' + res.statusCode + '\n';
   }
-  info += (err && err.stack || err) + '\n';
-  info += app_stack;
+  info += app_stack + '\n';
+  info += (err && err.stack || err);
   console.error(info);
 };
 

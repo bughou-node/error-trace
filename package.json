@@ -4,7 +4,7 @@
   "description": "trace error trace",
   "main": "error-trace.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node test.js"
   },
   "homepage": "https://github.com/bughou/error-trace",
   "repository": {
