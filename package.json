@@ -1,6 +1,6 @@
 {
   "name": "error-trace",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "trace error trace",
   "main": "error-trace.js",
   "scripts": {
