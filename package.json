@@ -1,15 +1,15 @@
 {
   "name": "error-trace",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "trace error trace",
   "main": "error-trace.js",
   "scripts": {
     "test": "node test.js"
   },
-  "homepage": "https://github.com/bughou/error-trace",
+  "homepage": "https://github.com/bughou-node/error-trace",
   "repository": {
     "type": "git",
-    "url": "git@github.com/bughou/error-trace.git"
+    "url": "git@github.com/bughou-node/error-trace.git"
   },
   "keywords": [
     "error",
